@@ -10,15 +10,18 @@
 header  {
     font-size: 20px;
     margin: 16px;
+    padding: 20px 20px 0 20px;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 body    {
     background-color: var(--papaya-whip);
 }
+
+
 
 footer  {
     width: 100vw;
@@ -32,9 +35,11 @@ footer  {
     margin: 3px;
 }
 
+#about  {
+    max-width: 113px;
+}
 
-
-a{
+#back-to-top{
     margin-right: 30px;
 }
 
@@ -49,7 +54,6 @@ a{
 
 .gallery    {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-gap: 30px;
     align-items: center;
     justify-content: center;
@@ -57,11 +61,22 @@ a{
 
 .gallery img{
     width: 100%;
-    
 }
 
 #logo   {
     font-size: 60px;
+}
+
+
+@media (min-width:500px) { 
+    /* Smartphone view: 1 tile */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
