@@ -56,7 +56,7 @@ p   {
 }
 #contact-footer {
     width: 100vw;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     padding: 3px;
@@ -91,6 +91,10 @@ p   {
     justify-content: space-between;  
     align-items: flex-end;  
     width: 90%;
+}
+
+#about-me-image {
+    width: 50vw;
 }
 
 .wrapper    {
@@ -132,7 +136,10 @@ p   {
     margin: 0;
 }
 
-
+.submit-button  {
+    display: flex;
+    align-items: flex-start;
+}
 
 @media (min-width:500px) { 
     /* Smartphone view: 1 tile */
