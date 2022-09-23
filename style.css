@@ -64,13 +64,17 @@ p   {
 }
 
 #first-name, #last-name  {
-    width: 100%;
+    border: 1px solid black;
+    width: 90%;
     padding: 8px;
+    margin-top: 8px;
 }
+
 
 #email, #subject    {
     width: 90%;
     padding: 8px;
+    border: 1px solid black;
 }
 
 #message  {
@@ -78,23 +82,23 @@ p   {
     height: 100px;
     padding: 8px;
     line-height: normal;
+    border: 1px solid black;
 }
 
 #contact-form   {
-    width:50vw;
+    width: 80vw;
     margin: 8px;
 }
 
 #name-inputs    {
-    flex-wrap: wrap;
-    display: flex;
+    display: inline;
     justify-content: space-between;  
     align-items: flex-end;  
     width: 90%;
 }
 
 #about-me-image {
-    width: 50vw;
+    width: 80vw;
 }
 
 .wrapper    {
@@ -106,7 +110,7 @@ p   {
 }
 
 .about-me   {
-    width: 50%;
+    width: 60%;
     display: inline-block;
     flex-wrap: wrap;
 }
@@ -142,13 +146,22 @@ p   {
 }
 
 @media (min-width:500px) { 
-    /* Smartphone view: 1 tile */
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(2, minmax(250px, 1fr));
         grid-gap: 30px;
         align-items: center;
         justify-content: center;
+    }
+
+    #contact-form   {
+        width: 30vw;
+        margin: 8px;
+    }
+
+    #about-me-image {
+        width: 60vw;
     }
 }
 
