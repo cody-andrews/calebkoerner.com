@@ -17,7 +17,12 @@ header  {
     justify-content: space-evenly;
 }
 
+html  {
+    height: 100vw;
+}
+
 body    {
+    min-height: 100vw;
     background-color: var(--papaya-whip);
 }
 
@@ -42,6 +47,63 @@ footer  {
 #back-to-top{
     margin-right: 30px;
 }
+#logo   {
+    font-size: 60px;
+}
+#contact-footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    margin: 3px;
+}
+
+#first-name, #last-name  {
+    width: 100%;
+    padding: 8px;
+   
+
+}
+
+#email, #subject    {
+    width: 90%;
+    padding: 8px;
+}
+
+#message  {
+    width: 90%;
+    height: 100px;
+    margin: 6px 0 4px 0;
+    padding: 8px;
+    line-height: normal;
+}
+
+#contact-form   {
+    display: flexbox;
+    width:33%;
+    margin: 8px;
+}
+
+#name-inputs    {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;  
+    align-items: flex-end;  
+    width: 90%;
+}
+
+.wrapper    {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me   {
+    width: 50%;
+}
 
 .container  {
     width: 80%;
@@ -63,9 +125,7 @@ footer  {
     width: 100%;
 }
 
-#logo   {
-    font-size: 60px;
-}
+
 
 
 @media (min-width:500px) { 
