@@ -7,10 +7,15 @@
     padding: 0;
 }
 
+.topnav {
+    margin: 16px;
+}
+
 .topnav #myLinks {
     display: none;
     justify-content: right;
     margin-right: 10%;
+    text-align: center;
       }
 
   .topnav a.icon {
@@ -42,6 +47,15 @@
     color: white;
   }
 
+
+  i {
+    padding: 10px;
+
+  }
+  i:hover{
+    background-color: #ddd;
+
+  }
   .fa-bars   {
 
     color: black;
@@ -50,11 +64,11 @@
 header  {
     font-size: 20px;
     margin: 16px;
-    padding: 20px 20px 0 20px;
-    display: flex;
+    /* padding: 20px 20px 20px 20px; */
+    display: flexbox;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 html  {
@@ -154,6 +168,16 @@ p   {
     display: inline-block;
     flex-wrap: wrap;
 }
+
+.HeadContainer  {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8%;
+
+}
+
 
 .container  {
     width: 80%;
