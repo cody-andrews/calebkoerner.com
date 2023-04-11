@@ -7,6 +7,46 @@
     padding: 0;
 }
 
+.topnav #myLinks {
+    display: none;
+    justify-content: right;
+    margin-right: 10%;
+      }
+
+  .topnav a.icon {
+    background: black;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    align-items: center;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover{
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .fa-bars   {
+
+    color: black;
+  }
+
 header  {
     font-size: 20px;
     margin: 16px;
